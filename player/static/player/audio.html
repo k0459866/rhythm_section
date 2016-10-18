@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<body>This is my mid term project originally for adjusting the playback speed, but now you can click the buttons to change volume, speed, and pause or play the audio file. Enjoy!</body>
+<br>
+<body>I know this is a little late, but I tried some new things to make this project a little more polished. I didn't really understand some of the commands in HTML until I looked a little deeper.</body>
+<br>
+<br>
+<P>Loch Lomond</P>
+<audio id="Loch_Lomond" src="/static/player/Loch_Lomond.mp3" controls></audio>
+<div>
+ <body>
+  Pause/Play
+ </body>
+ <br>
+  <button onclick="document.getElementById('Loch_Lomond').play()">Play the Audio</button>
+  <button onclick="document.getElementById('Loch_Lomond').pause()">Pause the Audio</button>
+</div>
+ <br>
+ <body>
+  Change the Volume
+ </body>
+ <br>
+  <button onclick="document.getElementById('Loch_Lomond').volume+=0.1">Increase Volume (+0.1 db)</button>
+  <button onclick="document.getElementById('Loch_Lomond').volume-=0.1">Decrease Volume (-0.1 db)</button>
+ <br>
+ <body>
+  Change the Playback Speed 
+ </body>
+ <br>
+  <button onclick="document.getElementById('Loch_Lomond').playbackRate+=0.5">Increase Speed (current time * 1.5)</button>
+  <button onclick="document.getElementById('Loch_Lomond').playbackRate-=0.5">Decrease Speed (current speed * 0.5)</button>
+</div>
